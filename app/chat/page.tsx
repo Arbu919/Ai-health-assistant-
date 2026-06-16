@@ -73,13 +73,13 @@ export default function ChatPage() {
       {/* Header */}
       <header className="border-b bg-white px-6 py-4 shadow-sm flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">ZARO AI Health Assistant</h1>
+          <h1 className="text-2xl sm:text-xl font-bold">ZARO AI Health Assistant</h1>
           <p className="text-sm text-gray-600">Educational symptom guidance</p>
         </div>
 
         <button
           onClick={handleClear}
-          className="rounded-lg border px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+          className="rounded-lg border px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 sm:text-sm"
         >
           New Chat
         </button>
