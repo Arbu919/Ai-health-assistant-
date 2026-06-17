@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
 For every user message describing symptoms, respond using this structure:
 
 *Possible Causes*
-- list 2-4 possible causes
+- list 2-3 possible causes
 
 *Questions*
 - list 1-2 relevant follow-up questions

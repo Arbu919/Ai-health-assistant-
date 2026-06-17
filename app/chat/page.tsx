@@ -69,11 +69,11 @@ export default function ChatPage() {
   }
 
   return (
-    <main className="h-screen flex flex-col bg-gray-50">
+    <main className="flex flex-col bg-gray-50" style={{height:'100dvh'}}>
       {/* Header */}
       <header className="border-b bg-white px-6 py-4 shadow-sm flex items-center justify-between">
         <div>
-          <h1 className="text-2xl sm:text-xl font-bold">ZARO AI Health Assistant</h1>
+          <h1 className="sm-text-base text-2xl font-bold">ZARO AI Health Assistant</h1>
           <p className="text-sm text-gray-600">Educational symptom guidance</p>
         </div>
 
@@ -87,7 +87,7 @@ export default function ChatPage() {
 
       {/* Messages */}
       <section className="flex-1 overflow-y-auto px-6 py-6">
-        <div className="mx-auto max-w-3xl space-y-4">
+        <div className="mx-auto max-w-3xl space-y-4 ">
           {messages.map((message, index) => (
             <div
               key={index}
@@ -128,7 +128,7 @@ export default function ChatPage() {
       </section>
 
       {/* Input */}
-      <footer className="border-t bg-white px-6 py-4">
+      <footer className="border-t bg-white px-6 py-4 fixed bottom-0 w-full">
         <div className="mx-auto max-w-3xl">
           <div className="flex gap-3">
             <input
