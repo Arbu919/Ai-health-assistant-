@@ -69,7 +69,7 @@ export default function ChatPage() {
   }
 
   return (
-    <main className="flex flex-col bg-gray-50" style={{height:'100dvh'}}>
+    <main className="flex flex-col bg-gray-50 h-full" style={{ height: '100dvh' }}>
       {/* Header */}
       <header className="border-b bg-white px-6 py-4 shadow-sm flex items-center justify-between">
         <div>
@@ -86,8 +86,8 @@ export default function ChatPage() {
       </header>
 
       {/* Messages */}
-      <section className="flex-1 overflow-y-auto px-6 py-6">
-        <div className="mx-auto max-w-3xl space-y-4 ">
+      <section className="flex-1 overflow-y-auto px-6 py-6 h-full">
+        <div className="mx-auto max-w-3xl space-y-4 pb-24 ">
           {messages.map((message, index) => (
             <div
               key={index}
@@ -128,7 +128,7 @@ export default function ChatPage() {
       </section>
 
       {/* Input */}
-      <footer className="border-t bg-white px-6 py-4 fixed bottom-0 w-full">
+      <footer className="border-t bg-white px-6 py-4 fixed w-full bottom-0">
         <div className="mx-auto max-w-3xl">
           <div className="flex gap-3">
             <input
@@ -151,10 +151,7 @@ export default function ChatPage() {
             </button>
           </div>
 
-          <p className="mt-3 text-xs text-gray-500">
-            This assistant provides educational information only and is not a
-            substitute for professional medical advice, diagnosis, or treatment.
-          </p>
+          
         </div>
       </footer>
     </main>
