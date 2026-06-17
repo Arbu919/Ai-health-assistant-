@@ -69,11 +69,11 @@ export default function ChatPage() {
   }
 
   return (
-    <main className="flex flex-col bg-gray-50 h-full" style={{ height: '100dvh' }}>
+    <main className="flex flex-col bg-gray-50 h-full" style={{ height: '100%' }}>
       {/* Header */}
       <header className="border-b bg-white px-6 py-4 shadow-sm flex items-center justify-between">
         <div>
-          <h1 className="sm-text-base text-2xl font-bold">ZARO AI Health Assistant</h1>
+          <h1 className="text-2xl font-bold">ZARO AI Health Assistant</h1>
           <p className="text-sm text-gray-600">Educational symptom guidance</p>
         </div>
 
